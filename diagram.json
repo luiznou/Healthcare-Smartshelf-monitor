@@ -1,0 +1,15 @@
+
+{
+  "version": 1,
+  "author": "Luiz Renato",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -30, "left": 0, "rotate": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -100, "left": 150, "attrs": { "humidity": "47.3", "temperature": "5.5" } }
+  ],
+  "connections": [
+    [ "dht:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "dht:SDA", "esp:15", "green", [ "v0" ] ]
+  ]
+}
